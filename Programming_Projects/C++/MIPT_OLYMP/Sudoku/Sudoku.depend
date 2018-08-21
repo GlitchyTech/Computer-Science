@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1528577461 source:c:\users\home\documents\programming_projects\c++\mipt_olymp\sudoku\main.cpp
-	<iostream>
-	<conio.h>
-	<vector>
-	<queue>
-

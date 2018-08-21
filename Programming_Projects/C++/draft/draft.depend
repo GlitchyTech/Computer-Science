@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1532799953 source:c:\users\home\documents\programming_projects\c++\draft\main.cpp
-	<iostream>
-	<typeinfo>
-	<type_traits>
-
