@@ -3,7 +3,7 @@
 
 
 
-; Constructor and selectors for Huffman's terminal nodes.
+;; Constructor and selectors for Huffman's terminal nodes.
 
 (define (make-leaf symbol weight)
   (list 'leaf symbol weight))
@@ -18,7 +18,7 @@
 
 
 
-; Constructor and selectors for Huffman's vertices.
+;; Constructor and selectors for Huffman's vertices.
 
 (define (make-code-tree left right)
   (list left
@@ -43,7 +43,7 @@
 
 
 
-; Encode given sequence of symbols.
+;; Encode given sequence of symbols.
 
 (define (encode message tree)
   (if (null? message)
@@ -77,7 +77,7 @@
 
 
 
-; Decode given sequence of bites.
+;; Decode given sequence of bites.
 
 (define (decode bits tree)
   (define (decode-1 bits current-branch)
@@ -99,8 +99,8 @@
 
 
 
-; Add element to set. Works with ordered lists.
-; Sorts from the smallest to the largest weight.
+;; Add element to set. Works with ordered lists.
+;; Sorts from the smallest to the largest weight.
 
 (define (adjoin-set x set)
   (cond ((null? set) (list x))
@@ -108,7 +108,7 @@
         (else (cons (car set)
                     (adjoin-set x (cdr set))))))
 
-; Sort given list of pairs. Type of pair - ('symbol number).
+;; Sort given list of pairs. Type of pair - ('symbol number).
 
 (define (make-leaf-set pairs)
   (if (null? pairs)
@@ -121,7 +121,7 @@
 
 
 
-; Generates Huffman tree.
+;; Generates Huffman tree.
 
 (define (generate-huffman-tree pairs)
   (successive-merge (make-leaf-set pairs)))
