@@ -92,5 +92,6 @@ int main()
 		return 0;
 	}
 	sudoku.output();
+	system("pause")
 	return 0;
 }
