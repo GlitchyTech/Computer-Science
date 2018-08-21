@@ -1,1 +1,1 @@
-My Project Library on C++.
+Hi stranger, welcome to my library.
