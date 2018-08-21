@@ -1,5 +1,5 @@
 main:
-	call power
+    call power
 power:
     push ecx
     push ebx
