@@ -1,8 +1,6 @@
 #lang racket
 
 
-
-
 ;; Constructor and selectors for Huffman's terminal nodes.
 
 (define (make-leaf symbol weight)
